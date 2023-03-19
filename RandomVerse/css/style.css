@@ -1,11 +1,15 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 /*
 Paleta de cores
-#D9CCC1
-#024059
-#023E73
-#BF6415
+
+.background-of-abstract-glitter-lights.-blue,-gold-and-black.-de-focused.-banner-1-hex { color: #0D1A26; }
+.background-of-abstract-glitter-lights.-blue,-gold-and-black.-de-focused.-banner-2-hex { color: #184059; }
+.background-of-abstract-glitter-lights.-blue,-gold-and-black.-de-focused.-banner-3-hex { color: #265D73; }
+.background-of-abstract-glitter-lights.-blue,-gold-and-black.-de-focused.-banner-4-hex { color: #CFD984; }
+.background-of-abstract-glitter-lights.-blue,-gold-and-black.-de-focused.-banner-5-hex { color: #F2EAC2; }
 
 */
 
@@ -21,9 +25,21 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #D9CCC1;    
+    background-image: linear-gradient(to bottom,#0D1A26, #184059, #265D73, #0D1A26);
+    background-repeat: no-repeat;
+    background-size: 100% 900%;    
+    animation: degrade 4s infinite alternate;
     width: 100vw;
     height: 100vh;
+}
+
+@keyframes degrade {
+    0% {
+        background-position-y: 0%;
+    }
+    100%{
+        background-position-y: 100%;
+    }
 }
 
 .title {
@@ -32,13 +48,14 @@ body, html {
     align-items: center;
     width: 350px;
     height: 60px;
-    border: 3px solid #8C503A;
+    border: 3px solid #F2EAC2;
     margin-bottom: 60px;
 }
 
 .title h1 {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 40px;
-    color: #BF6415;
+    color: #F2EAC2;
 
 }
 
@@ -48,24 +65,21 @@ body, html {
     justify-content: center;
     align-items: center;
     width: 350px;
-    border: 3px solid #8C503A;
-    border-radius: 15px;
 }
 
 .data {
     display: flex ;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     width: 98%;
     height: 100px;
-    margin: 2px 0px 2px 0px;
-    background-color: #023E73;
-    border-radius: 15px;
+    padding-bottom: 8px;
 }
 
 .data h2 {
-    font-size: 30px;
-    color: #BF6415;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    color: #F2EAC2;
 }
 
 .versiculo {
@@ -73,15 +87,18 @@ body, html {
     justify-content: center;
     align-items: center;
     width: 98%;
-    height: 350px;
+    height: 500px;
     margin-bottom: 2px;
-    background-color: #024059;
-    border-radius: 15px;
+    background-color: #cfd9841c;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px;
     
 }
 
 .versiculo p {
-    font-size: 24px;
-    color: #D9CCC1;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 28px;
+    color: #F2EAC2;
+    text-align: center;
 
 }
