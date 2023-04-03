@@ -2,6 +2,12 @@
 
 /*
 Paleta de cores
+#848AB3 background
+#2C3465 calculadora
+#5675A3 botao
+#D36AA5 botao 2
+#12B9EE botao 3
+#486C78 tela
 */
 
 * {
@@ -9,4 +15,76 @@ Paleta de cores
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+}
+
+body, html {
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #848AB3;
+    width: 100vw;
+    height: 100vh;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 390px;
+    background-color: #2C3465;
+    border-radius: 25px;
+
+}
+
+.tela {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+    height: 55px;
+    margin: 3px;
+    background-color: #486C78;
+    color: white;
+    font-size: 28px;
+    
+
+}
+
+.teclado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 25px;
+}
+
+.botao {
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    background-color: #5675A3;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 3px 3px 2px black;
+    cursor: pointer;
+    transition: 500ms;
+
+}
+
+.botao:hover {
+    background-color: #131b25;
+
+}
+
+.rowBt {
+    height: 88px;
+}
+
+.pinkBt {
+    background-color: #D36AA5;
 }
