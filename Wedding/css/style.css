@@ -4,9 +4,13 @@
 
 /*
 Paletas de cores
-Verde: #49a09d
-Lilás: #5f2c82
-*/
+/* Color Theme Swatches in Hex */
+.Crevasse-1-hex { color: #B4BEC9; }
+.Crevasse-2-hex { color: #159A9C; }
+.Crevasse-3-hex { color: #002333; }
+.Crevasse-4-hex { color: #DEEFE7; }
+.Crevasse-5-hex { color: #FFFFFF; }
+
 
 * {
     font-family: 'Teko', sans-serif;
@@ -16,7 +20,7 @@ Lilás: #5f2c82
 }
 
 body, html {
-    background-color: #646464;    
+    background-color: #FFFFFF;    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,8 +32,9 @@ body, html {
 
 header {
     width: 100%;
-    height: 100px;
-    background-color: blue;
+    height: 60px;
+    background-color: #deefe73a;
+
 
 }
 
@@ -82,13 +87,20 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: blueviolet;
+    background-color: #159A9C;
 
 }
 
 .polaroid {
     width: 80%;
     height: 30%;
-    background-color: black;
+    background-color: #FFFFFF;
+    padding: 8px 8px 35px 8px;
 
 }
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
